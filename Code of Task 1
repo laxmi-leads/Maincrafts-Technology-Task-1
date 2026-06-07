@@ -1,0 +1,345 @@
+******************HTML PART**************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laxmi Unicorn</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h2>Laxmi Unicorn</h2>
+        <span>HERITAGE SAREES OF INDIA</span>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Collection</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <p class="location">
+            EST. WITH DEVOTION • CIVIL LINES, PRAYAGRAJ
+        </p>
+
+        <h1>
+            The threads of India,<br>
+            <span>draped in legacy.</span>
+        </h1>
+
+        <p class="desc">
+            Laxmi Unicorn manufactures six soul-stirring cultural
+            sarees, each one woven in the rhythm of its state —
+            Banarasi, Kanjivaram, Paithani, Chanderi, Bandhani
+            and Sambalpuri.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn">Explore Collection</a>
+            <a href="#" class="story">Our Story</a>
+        </div>
+
+        <div class="stats">
+            <div>
+                <h3>06</h3>
+                <p>States of India</p>
+            </div>
+
+            <div>
+                <h3>100%</h3>
+                <p>Handwoven</p>
+            </div>
+
+            <div>
+                <h3>∞</h3>
+                <p>Stories Woven</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="images/model.jpg" alt="">
+    </div>
+
+</section>
+
+<section class="collection">
+
+    <h2>Three drapes, three states.</h2>
+
+    <div class="grid">
+
+        <div class="card large">
+            <img src="images/banarasi.jpg">
+            <div class="overlay">
+                <h3>Banarasi Silk</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/kanjivaram.jpg">
+            <div class="overlay">
+                <h3>Kanjivaram Silk</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/paithani.jpg">
+            <div class="overlay">
+                <h3>Paithani</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="quote">
+
+    <p>- A Weaver's Whisper -</p>
+
+    <h2>
+        "A saree is not stitched.<br>
+        It is remembered, thread by thread."
+    </h2>
+
+</section>
+
+<footer>
+
+    <div>
+        <h2>Laxmi Unicorn</h2>
+        <p>
+            Bringing the soul of India's weaving traditions
+            to your wardrobe.
+        </p>
+    </div>
+
+    <div>
+        <h4>Explore</h4>
+        <p>Home</p>
+        <p>About</p>
+        <p>Collection</p>
+    </div>
+
+    <div>
+        <h4>Reach Us</h4>
+        <p>+91 83031 07414</p>
+        <p>lk2953597@gmail.com</p>
+        <p>Civil Lines, Prayagraj</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
+*****************CSS PART***************
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f7f6f3;
+color:#222;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 10%;
+}
+
+.logo h2{
+font-family:'Cormorant Garamond',serif;
+font-size:40px;
+font-weight:600;
+color:#7a3045;
+}
+
+.logo span{
+font-size:11px;
+letter-spacing:3px;
+}
+
+nav a{
+text-decoration:none;
+margin-left:35px;
+color:#222;
+letter-spacing:2px;
+text-transform:uppercase;
+font-size:13px;
+}
+
+.hero{
+padding:80px 10%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:80px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.location{
+letter-spacing:4px;
+font-size:12px;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:78px;
+font-family:'Cormorant Garamond',serif;
+font-weight:500;
+line-height:1;
+margin-bottom:30px;
+}
+
+.hero h1 span{
+color:#7a3045;
+font-style:italic;
+}
+
+.desc{
+line-height:1.9;
+max-width:550px;
+margin-bottom:35px;
+}
+
+.btn{
+background:#7a3045;
+padding:15px 30px;
+color:white;
+text-decoration:none;
+}
+
+.story{
+margin-left:25px;
+text-decoration:none;
+color:#222;
+}
+
+.stats{
+display:flex;
+gap:70px;
+margin-top:50px;
+}
+
+.stats h3{
+font-family:'Cormorant Garamond',serif;
+font-size:35px;
+}
+
+.hero-image img{
+width:500px;
+height:650px;
+object-fit:cover;
+}
+
+.collection{
+padding:100px 10%;
+}
+
+.collection h2{
+font-family:'Cormorant Garamond',serif;
+font-size:60px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:25px;
+}
+
+.card{
+position:relative;
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.large{
+height:700px;
+}
+
+.card:not(.large){
+height:340px;
+}
+
+.overlay{
+position:absolute;
+bottom:20px;
+left:20px;
+color:white;
+}
+
+.overlay h3{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+}
+
+.quote{
+padding:120px 10%;
+text-align:center;
+}
+
+.quote p{
+letter-spacing:4px;
+margin-bottom:20px;
+}
+
+.quote h2{
+font-size:70px;
+font-family:'Cormorant Garamond',serif;
+font-style:italic;
+font-weight:400;
+}
+
+footer{
+background:#15100f;
+color:white;
+display:flex;
+justify-content:space-between;
+padding:70px 10%;
+margin-top:80px;
+}
+
+footer h2{
+font-family:'Cormorant Garamond',serif;
+margin-bottom:20px;
+color:#d7b37b;
+}
+
+footer h4{
+margin-bottom:20px;
+color:#d7b37b;
+}
+
+footer p{
+margin-bottom:10px;
+}
